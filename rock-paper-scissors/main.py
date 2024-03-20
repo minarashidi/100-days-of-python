@@ -31,7 +31,7 @@ scissors = '''
 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."))
 
 # Rock 0 wins against scissors.
-# Scissors 2 win against paper.
+# Scissors 2 wins against paper.
 # Paper 1 wins against rock.
 
 if user_choice >= 3 or user_choice < 0:
