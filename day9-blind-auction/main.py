@@ -10,10 +10,10 @@ print(logo)
 bids = {}
 
 
-def find_highest_bid():
+def find_highest_bid(bidding_record):
     highest_bid = 0
     winner = ""
-    for key in bids:
+    for key in bidding_record:
         if bids[key] > highest_bid:
             highest_bid = bids[key]
             winner = key
@@ -30,4 +30,4 @@ while continue_bidding:
         clear()
     elif other_bidders == "no":
         continue_bidding = False
-        find_highest_bid()
+        find_highest_bid(bids)
