@@ -1,5 +1,5 @@
 from art import logo
-import random
+from random import randint
 
 EASY_DIFFICULTY_LEVEL = 10
 HARD_DIFFICULTY_LEVEL = 5
@@ -18,7 +18,7 @@ def game():
     print("Welcome to the Number Guessing Game!")
     print("I'm thinking of a number between 1 and 100")
 
-    random_number = random.randint(1, 100)
+    random_number = randint(1, 100)
     total_attempts = set_difficulty()
 
     attempts = 0
