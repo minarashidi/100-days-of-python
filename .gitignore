@@ -1,0 +1,13 @@
+# Ignore compiled Python files
+*.pyc
+
+# Ignore virtual environment directories
+venv/
+
+# Ignore IntelliJ IDEA project files
+*.iml
+misc.xml
+modules.xml
+profiles_settings.xml
+vcs.xml
+workspace.xml
