@@ -49,4 +49,12 @@ def calculator():
             calculator()
 
 
-calculator()
+# calculator()
+
+
+def calculator_higher_order_function(a, b, fun):
+    return fun(a, b)
+
+
+print(calculator_higher_order_function(2, 3, add))
+print(calculator_higher_order_function(2, 3, multiply))
