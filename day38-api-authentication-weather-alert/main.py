@@ -5,7 +5,7 @@ from twilio.rest import Client
 
 endpoint = "https://pro.openweathermap.org/data/2.5/forecast"
 api_key = os.environ.get("OPEN_WEATHER_MAP_API_KEY")  # free account; "5796abbde9106b7da4febfae8c44c232"
-account_sid = "AC3970b9e61977114ec1d01d43989924bd"
+account_sid = "YOUR ACCOUNT SID"  # "AC3970b9e61977114ec1d01d43989924bd"
 auth_token = os.environ.get("OPEN_WEATHER_MAP_AUTH_TOKEN")  # free account; "7469b7a123ef773e003f559ef0213e39"
 current_latitude = "59.329323"  # Here you can find it: https://www.latlong.net/
 current_longitude = "-18.068581"
