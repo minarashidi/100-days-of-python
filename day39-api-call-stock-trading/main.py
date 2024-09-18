@@ -24,7 +24,7 @@ response.raise_for_status()
 data = response.json().get("Time Series (Daily)")
 stock_data = [value for (key, value) in data.items()]
 yesterday_closing_price = float(stock_data[0]["4. close"])
-day_before_yesterday_closing_price = float(stock_data[2]["4. close"])
+day_before_yesterday_closing_price = float(stock_data[1]["4. close"])
 
 difference = float(yesterday_closing_price) - float(day_before_yesterday_closing_price)
 percentage_diff = round((difference / float(yesterday_closing_price)) * 100)
